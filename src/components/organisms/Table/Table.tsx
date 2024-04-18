@@ -118,14 +118,14 @@ const Table: React.FC<TableProps> = ({ data, dataMessage }) => {
                         <button
                             onClick={() => paginate(currentPage - 1)}
                             disabled={currentPage === 1}
-                            className='relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 cursor-pointer'
+                            className='relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-primary-background bg-primary-title hover:bg-gray-50 cursor-pointer'
                         >
                             Previous
                         </button>
                         <button
                             onClick={() => paginate(currentPage + 1)}
                             disabled={indexOfLastItem >= data.length}
-                            className='ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 cursor-pointer'
+                            className='ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-primary-background bg-primary-title hover:bg-gray-50 cursor-pointer'
                         >
                             Next
                         </button>

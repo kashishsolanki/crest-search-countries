@@ -2,6 +2,8 @@
 
 This is a completed practical test for Crest Data Systems Interview Round 1, which is developed with react and typescript along with vite. Also had API integration for [REST Countries API](https://restcountries.com/). I'm adding all details about features and tech stack I have used and also how we can setup and test this application in local.
 
+Live App Url - [Search Countries Practical Test](https://crest-search-countries-j0tuim9rj-kashishsolankis-projects.vercel.app/)
+
 ### Features
 - SearchBox with debounce to wait until user finish typing
 - Table with Pagination and Sorting
@@ -17,6 +19,7 @@ This is a completed practical test for Crest Data Systems Interview Round 1, whi
 - React Hooks
 - Tailwind CSS
 - Vite TsConfig Paths
+- [Atomic Design](https://atomicdesign.bradfrost.com/chapter-2/) Folder Pattern
 
 ### Prerequisites
 
@@ -48,12 +51,18 @@ yarn dev
 - Visit http://localhost:5173 in your browser to view the application.
 
 ### Linting and Formatting
-This project uses ESLint for linting and code formatting. To run linting scripts, use the following commands:
+This project uses ESLint for linting and code formatting. To run linting scripts, use the following command:
 ```
 # Run ESLint
 npm run lint
 # or
 yarn lint
+```
+
+### To check Tailwind changes
+For this, keep new terminal window open with running this command:
+```
+npx tailwindcss -i ./src/index.css -o ./src/output.css --watch
 ```
 
 ### Package description
